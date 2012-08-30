@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F76E5A8-686F-4534-8128-1EAE8F06FF6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowStocks</RootNamespace>
+    <AssemblyName>WindowStocks</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\main.ico</ApplicationIcon>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <PublishUrl>http://localhost/WindowStocks/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>WindowStocks.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compare.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="ExtendedNotifyIcon.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPluginsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPluginsEdit.Designer.cs">
+      <DependentUpon>FrmPluginsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlarm.Designer.cs">
+      <DependentUpon>FrmAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChart.Designer.cs">
+      <DependentUpon>FrmChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockEdit.Designer.cs">
+      <DependentUpon>FrmStockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKLine.Designer.cs">
+      <DependentUpon>FrmKLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilter.Designer.cs">
+      <DependentUpon>FrmFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBallon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBallon.Designer.cs">
+      <DependentUpon>FrmBallon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.Functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPluginsManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPluginsManager.Designer.cs">
+      <DependentUpon>FrmPluginsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectCols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectCols.Designer.cs">
+      <DependentUpon>FrmSelectCols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSContainer.Designer.cs">
+      <DependentUpon>FrmSContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSettingsBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSGlobalStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSGlobalStyle.Designer.cs">
+      <DependentUpon>FrmSGlobalStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSDataGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSDataGrid.Designer.cs">
+      <DependentUpon>FrmSDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSTitleStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSTitleStock.Designer.cs">
+      <DependentUpon>FrmSTitleStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings\FrmSSystem.Designer.cs">
+      <DependentUpon>FrmSSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NumericUpDownEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPluginsEdit.resx">
+      <DependentUpon>FrmPluginsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlarm.resx">
+      <DependentUpon>FrmAlarm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChart.resx">
+      <DependentUpon>FrmChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockEdit.resx">
+      <DependentUpon>FrmStockEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKLine.resx">
+      <DependentUpon>FrmKLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilter.resx">
+      <DependentUpon>FrmFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBallon.resx">
+      <DependentUpon>FrmBallon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPluginsManager.resx">
+      <DependentUpon>FrmPluginsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectCols.resx">
+      <DependentUpon>FrmSelectCols.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings\FrmSContainer.resx">
+      <DependentUpon>FrmSContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings\FrmSGlobalStyle.resx">
+      <DependentUpon>FrmSGlobalStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings\FrmSDataGrid.resx">
+      <DependentUpon>FrmSDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings\FrmSTitleStock.resx">
+      <DependentUpon>FrmSTitleStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings\FrmSSystem.resx">
+      <DependentUpon>FrmSSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Stock.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_16x16.png" />
+    <None Include="Resources\file_16x16.png" />
+    <None Include="Resources\edit_16x16.png" />
+    <None Include="Resources\help_16x16.png" />
+    <None Include="Resources\exit_16x16.png" />
+    <None Include="Resources\filter_add_16x16.gif" />
+    <None Include="Resources\info_16x16.png" />
+    <None Include="Resources\chart_16x16.png" />
+    <None Include="Resources\delete_16x16.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\delete2_16x16.png" />
+    <None Include="Resources\col_16x16.png" />
+    <None Include="Resources\col_autosize_16x16.png" />
+    <None Include="Resources\fullscreen_16x16.png" />
+    <None Include="Resources\chart_bad.png" />
+    <None Include="Resources\close_24x24.png" />
+    <None Include="Resources\bell_on_16x16.png" />
+    <None Include="Resources\bell_off_16x16.png" />
+    <None Include="Resources\arrow_up_16x16.png" />
+    <None Include="Resources\chart_test.png" />
+    <None Include="Resources\backcolor_16x16.png" />
+    <None Include="Resources\arrow_down1_16x16.png" />
+    <None Include="Resources\arrow_up1_16x16.png" />
+    <Content Include="Resources\control_double_down.png" />
+    <None Include="Resources\info2_32x32.png" />
+    <None Include="Resources\info3_48x48.png" />
+    <None Include="Resources\frmchatbg.png" />
+    <None Include="Resources\copy_16x16.png" />
+    <Content Include="Resources\edit_16x16.ico" />
+    <Content Include="Resources\filter_add_16x16.ico" />
+    <None Include="Resources\font_color_16x16.png" />
+    <None Include="Resources\font_16x16.png" />
+    <None Include="Resources\format_clear_16x16.png" />
+    <None Include="Resources\gold_16x16.png" />
+    <None Include="Resources\loading_16x16.png" />
+    <None Include="Resources\format_16x16.png" />
+    <None Include="Resources\firefox_16x16.png" />
+    <None Include="Resources\link_gif_16x16.gif" />
+    <Content Include="Resources\main.ico" />
+    <None Include="Resources\tool_16x16.png" />
+    <None Include="Resources\plugin_16x16.png" />
+    <None Include="Resources\plugin2_16x16.png" />
+    <None Include="Resources\plugin2_add_16x16.png" />
+    <None Include="Resources\settings_16x16.gif" />
+    <None Include="Resources\ok_16x16.png" />
+    <None Include="Resources\stat_16x16.png" />
+    <None Include="Resources\showhide_16x16.png" />
+    <None Include="Resources\main_48x48.png" />
+    <None Include="Resources\nomini.png" />
+    <None Include="Resources\null_16x16.png" />
+    <Content Include="Resources\settings_16x16.ico" />
+    <Content Include="更新日志.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\talk_16x16.png" />
+    <None Include="Resources\showintitle_on_16x16.png" />
+    <None Include="Resources\showintitle_off_16x16.png" />
+    <None Include="Resources\square_16x16.png" />
+    <None Include="Resources\warning2_16x16.ico" />
+    <None Include="Resources\updater_16x16.png" />
+    <None Include="Resources\warning_48x48.png" />
+    <None Include="Resources\未标题-1.psd" />
+    <None Include="StocksSource_V1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WindowStocks.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
